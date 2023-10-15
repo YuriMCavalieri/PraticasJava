@@ -1,0 +1,29 @@
+package atividade2;
+import java.util.Scanner;
+public class exercicio8 {
+	public static void main(String[] args) {
+	Scanner input= new Scanner(System.in);
+		System.out.println("Digite o código de 1 a 5");
+	int codigo;
+	codigo= input.nextInt();
+	if (codigo==1) {
+		System.out.println("O código do produto é referente ao sapato, cujo valor é RS 99.99");
+	}
+	else if(codigo ==2) {
+		System.out.println("O código do produto é referente a Bolsa, cujo valor é 103.89");
+	}
+	else if(codigo ==3){
+		System.out.println("O código do produto é referente a camisa, cujo valor é 49.98");
+	}
+	else if(codigo==4){
+		System.out.println("O código do produto é referente a calça, cujo valor é 89.72");
+	}
+	else if(codigo==5) {
+		System.out.println("O código do produto é referente a blusa. cujo valor é 97.35");
+	}
+	else(codigo>5){
+		System.out.println("Código invalido");
+		
+	}
+}
+}

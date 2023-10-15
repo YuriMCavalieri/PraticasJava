@@ -1,0 +1,31 @@
+package atividade2;
+import java.util.Scanner;
+
+public class exercicio4 {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        
+        System.out.print("Digite seu peso: ");
+        double peso = input.nextDouble();
+        
+        System.out.print("Digite sua altura: ");
+        double altura = input.nextDouble();
+        double IMC = peso / (altura * altura);
+        
+        String situacao = null;
+        if (IMC < 18.5) {
+            situacao = "Você está abaixo do peso";
+        } else if (IMC >= 18.5 && IMC < 25) {
+            situacao = "Você está com peso normal";
+        } else if (IMC >= 25 && IMC < 30) {
+            situacao = "Você está com sobrepeso";
+        } else if (IMC >= 30 && IMC < 35) {
+            situacao = "Você está obeso";
+        } else {
+            situacao = "Você está com obesidade mórbida";
+        }
+        
+        System.out.println("IMC: " + IMC);
+        System.out.println("Situação: " + situacao);
+    }
+}
